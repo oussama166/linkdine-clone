@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .z-rotate {
+    rotate: 80deg;
+  }
+  .container{
+    @apply px-28;
+  }
+  .darkerFull {
+    @apply bg-black opacity-25 z-[10000] w-full h-full;
+  }
+  .darker{
+    @apply bg-black opacity-25 z-[5] w-full h-full block;
+  }
+}
+
+
+
+/* Pure css */
