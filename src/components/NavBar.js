@@ -3,9 +3,7 @@ import Linkdine from '/public/linkdin-logo.svg'
 import Search from './Search'
 import IconButton from './utils/IconButton'
 import DropDown from './utils/DropDown'
-
-
-
+import { Link, Outlet } from 'react-router-dom'
 
 
 
@@ -42,41 +40,51 @@ function NavBar({ setDarker }) {
             {/* START Menu */ }
             <div className='w-1/2 h-full flex items-center justify-start gap-0'>
                 {/* navigations buttons */ }
-                <IconButton
-                    id={ 0 }
-                    name='Home'
-                    icon='home'
-                    state={ iconsButtonState[0] }
-                    Onclick={ PermuteState }
-                    isActiveButton={ setActiveState() } />
-                <IconButton
-                    id={ 1 }
-                    name='Work'
-                    icon='bag'
-                    state={ iconsButtonState[1] }
-                    Onclick={ PermuteState }
-                    isActiveButton={ setActiveState() } />
-                <IconButton
-                    id={ 2 }
-                    name='Reseau'
-                    icon='group'
-                    state={ iconsButtonState[2] }
-                    Onclick={ PermuteState }
-                    isActiveButton={ setActiveState() } />
-                <IconButton
-                    id={ 3 }
-                    name='Message'
-                    icon='message'
-                    state={ iconsButtonState[3] }
-                    Onclick={ PermuteState }
-                    isActiveButton={ setActiveState() } />
-                <IconButton
-                    id={ 4 }
-                    name='Notification'
-                    icon='notification'
-                    state={ iconsButtonState[4] }
-                    Onclick={ PermuteState }
-                    isActiveButton={ setActiveState() } />
+                <Link to="/" className='p-0 m-0 h-full'>
+                    <IconButton
+                        id={ 0 }
+                        name='Home'
+                        icon='home'
+                        state={ iconsButtonState[0] }
+                        Onclick={ PermuteState }
+                        isActiveButton={ setActiveState() } />
+                </Link>
+                <Link to="offreEmploye" className='p-0 m-0 h-full'>
+                    <IconButton
+                        id={ 1 }
+                        name='Work'
+                        icon='bag'
+                        state={ iconsButtonState[1] }
+                        Onclick={ PermuteState }
+                        isActiveButton={ setActiveState() } />
+                </Link>
+                <Link to="Reseau" className='p-0 m-0 h-full'>
+                    <IconButton
+                        id={ 2 }
+                        name='Reseau'
+                        icon='group'
+                        state={ iconsButtonState[2] }
+                        Onclick={ PermuteState }
+                        isActiveButton={ setActiveState() } />
+                </Link>
+                <Link to="Message" className='p-0 m-0 h-full'>
+                    <IconButton
+                        id={ 3 }
+                        name='Message'
+                        icon='message'
+                        state={ iconsButtonState[3] }
+                        Onclick={ PermuteState }
+                        isActiveButton={ setActiveState() } />
+                </Link>
+                <Link to="Notification" className='p-0 m-0 h-full'>
+                    <IconButton
+                        id={ 4 }
+                        name='Notification'
+                        icon='notification'
+                        state={ iconsButtonState[4] }
+                        Onclick={ PermuteState }
+                        isActiveButton={ setActiveState() } />
+                </Link>
                 {/* User menue */ }
                 <DropDown />
             </div>
