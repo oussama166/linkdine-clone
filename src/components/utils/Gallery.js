@@ -39,7 +39,7 @@ export const Gallery = () => {
             <Splide
                 aria-label={`persone-oussamaOuardi`}
                 options={{
-                    type: 'loop',
+                    type :"loop",
                     perPage: 1,
                     autoplay: true,
                     pagination: false,

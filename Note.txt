@@ -1,0 +1,19 @@
+email 
+password
+// Step 
+firstName
+LastName
+// Step 
+Country/Reagio
+City/District
+// Step 
+IF Job == True : 
+	Recent Job Title
+	Emplyement Type
+	Most Recent Company
+ELSE :
+	School or College 
+	Start Year
+	End Year (Expect)
+	I'm Over 16
+

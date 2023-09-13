@@ -34,6 +34,9 @@
         text-align: right;
         vertical-align: bottom;
     }
+    .matrix-1{
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
 
 }
 
